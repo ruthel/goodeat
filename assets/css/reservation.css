@@ -24,9 +24,24 @@ header h1{
     border: solid 1px ;
     border-radius: 6px;
     background-color:rgb(255, 246, 240);
+    
 
 }
 .list-menu li:hover{
-    background-color: rgb(248, 9, 9);
+    color:white;
+    border:black ;
+    background: #FF5733;
     transition: 0.5s;
+}
+.list-menu a{
+    text-decoration: none;
+}
+.list-menu a:link{
+    color:black;
+}
+.list-menu a:visited{
+    color:black;
+}
+.list-menu a:hover{
+    color:white
 }
