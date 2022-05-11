@@ -1,32 +1,36 @@
-body{
+body {
     margin: auto;
 }
+
+
 /*en-tete de page*/
-#header-reservation{
+
+#header-reservation {
     background-color: #04399c;
     height: 50px;
     padding: 20px;
     display: flex;
-   justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
-header h1{
-   display: flex;
+
+header h1 {
+    display: flex;
     color: aliceblue;
     text-transform: uppercase;
-
 }
-.list-menu li{
+
+.list-menu li {
     display: inline-block;
     color: rgb(12, 12, 12);
     list-style: none;
     padding: 5px;
-    border: solid 1px ;
+    border: solid 1px;
     border-radius: 6px;
-    background-color:rgb(255, 246, 240);
-
+    background-color: rgb(255, 246, 240);
 }
-.list-menu li:hover{
+
+.list-menu li:hover {
     background-color: rgb(248, 9, 9);
     transition: 0.5s;
 }
