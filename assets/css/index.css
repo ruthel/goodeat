@@ -4,5 +4,12 @@ h1 {
 }
 
 .title {
+
     font-size: 10px;
+}
+center h1 {
+    font-size: 10px;
+}
+a {
+color: red;
 }
