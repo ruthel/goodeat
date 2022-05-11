@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,18 +9,79 @@
 </head>
 
 <body>
-    <form action="#">
-        <input type="image" src="./assets/images/img.jpg" width="200"> <br>
-        <input type="email" name="email" id="email" placeholder="Adresse mail"> Email <br>
-        <input type="tel" name="phoneNumber" placeholder="Numero de telephone"> Numero de telephone <br>
-        <select name="contry">
-            <option value="cmr">Cameroon</option>
-            <option value="civ">Cote d'ivoire</option>
-            <option value="tg">Togo</option>
-        </select> <br>
-        <textarea name="description" cols="30" rows="10">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, expedita.
-        </textarea>
+    <table cellpadding="">
+        <tr>
+           <td>
+               <section>
+                <center>
+                    <h1> Contactez-Nous</h1>
+                   </center>
+                   <div>
+                    <img src="../assets/images/contact.jpg" alt="" width="75%" height="">
+                   </div>
+               </section> 
+            </td> <br>
+            <td>
+                <center>
+                    <h2> Reservation</h2>
+                </center>
+                <div>
+                    <h2>
+                        +237 658459682
+                    </h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <form action="#" method="post" class="contact form">
+        <table cellpadding="5" cellspacing="">
+            <tr>
+                <td>
+                    <input type="text" name="Nom" placeholder="Nom"> <br>
+                </td>
+                <td>
+                    <input type="text" name="Prenom" placeholder="Prenom"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="email" name="email" id="email" placeholder="Adresse mail"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="contry">
+                        <option value="cmr">Cameroon</option>
+                        <option value="civ">Cote d'ivoire</option>
+                        <option value="tg">Togo</option>
+                    </select> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="code" id="">
+                        <option value="">code</option>
+                        <option value="+237">+237</option>
+                        <option value="+225">+225</option>
+                        <option value="+231">+231</option>
+                        <option value="+241">+241</option>
+                    </select>
+                    <input type="tel" name="phoneNumber" placeholder="Numero de telephone"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="description" cols="30" rows="10">
+                        
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        <button type="submit"> <span> Envoyez </span> </button>
+                    </td>
+            </tr>
+        </table>
     </form>
 
 </html>
