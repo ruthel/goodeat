@@ -7,144 +7,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>reservation | Goodeat</title>
 </head>
 
 <body>
     <main>
-        <header id="header-reservation">
-            
-                <h1>Goodeat</h1>
-            
-            <nav class="menu">
-                <ul class="list-menu">
+        <header>
+
+            <h1>Goodeat</h1>
+
+            <nav>
+                <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="#">reservation</a></li>
                     <li><a href="./menu.html">menus</a></li>
                     <li> <a href="./contact-us.html">contactez-nous</a> </li>
-                    <li>A propos</li>
+                    <li><a href="./a-propos.html">A propos</a></li>
                 </ul>
             </nav>
         </header>
 
         <section>
-            <h2>reservations</h2>
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa iusto earum maiores porro qui
-                corporis ipsum sed similique! Optio consequuntur ad obcaecati ea id perferendis temporibus corrupti
-                deleniti laborum, aut nesciunt unde aspernatur officia pariatur provident distinctio beatae delectus
-                recusandae quam aperiam? Culpa esse natus eaque minus adipisci architecto harum nobis laboriosam odio
-                reiciendis. Voluptatem unde hic asperiores ad perspiciatis ipsam tempore sit magnam repellat dignissimos
-                excepturi rem, voluptates fugit harum illo ullam quisquam et ex eligendi quaerat iste consequatur velit
-                aliquam? Debitis blanditiis sapiente quas unde alias eos impedit, qui, corporis laborum quod quasi, eius
-                molestiae ab. Incidunt, doloribus tempore eaque repellendus quae vero tenetur, accusantium eum velit
-                illum nobis error eos in eius illo. Officia voluptatibus voluptas deserunt est unde ad, aliquam,
-                inventore iure, velit delectus beatae fugiat. Sunt recusandae minus sapiente quae ea tempora accusamus
-                delectus deleniti, quos ad vero excepturi repellat, eligendi nam commodi consequatur.</div>
-        </section>
+            <h2>réservez votre table maintenant</h2>
+            <div class="card-reservation">
+                <div class="image-card">
+                    <!-- insertion image de formulaire -->
+                </div>
+                <div class="card-formulaire">
+                    <h3>reservation</h3>
+                    <form action="#">
+                        <div class="form-row">
+                            <select name="jours">
+                                <option value="day-select">selection du jour</option>
+                                <option value="lundi">lundi</option>
+                                <option value="mardi">mardi</option>
+                                <option value="mercredi">mercredi</option>
+                                <option value="jeudi">jeudi</option>
+                                <option value="vendredi">vendredi</option>
+                            </select>
 
-        <section>
-            <h2>horaires</h2>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime suscipit laudantium consequuntur
-                repellat nemo, expedita quaerat id. Velit, minima. Ipsa cum deleniti non. Ad laboriosam necessitatibus
-                natus distinctio illum facilis.
-            </div>
-            <table cellspacing="0" border="1">
-                <caption>Horaire d'ouverture</caption>
-                <thead>
-                    <tr>
-                        <th colspan="6">semaine</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="2">Horaire</td>
-                        <td>lundi</td>
-                        <td>mardi</td>
-                        <td>mercredi</td>
-                        <td>jeudi</td>
-                        <td>vendredi</td>
-                    </tr>
-                    <tr>
-                        <td>08 <sup>h</sup> 00 / 18 <sup>h</sup>30 </td>
-                        <td>08 <sup>h</sup> 00 / 18 <sup>h</sup>30 </td>
-                        <td>08 <sup>h</sup> 00 / 18 <sup>h</sup>30 </td>
-                        <td>08 <sup>h</sup> 00 / 18 <sup>h</sup>30 </td>
-                        <td>08 <sup>h</sup> 00 / 18 <sup>h</sup>30 </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+                            <select name="hours " id="">
+                                <option value="choix d'heure">Heure</option>
+                                <option value="10">10: 00</option>
+                                <option value="12">12: 00</option>
+                                <option value="14">14: 00</option>
+                                <option value="16">16: 00</option>
+                                <option value="18">18: 00</option>
+                                <option value="20">20: 00</option>
+                                <option value="22">22: 00</option>
+                            </select>
 
-        <section>
-            <div>
-                <h3>plan de reservation</h3>
-                <div>
-                    <form methode="post" action="">
-                        <div>
-                            <label for="standard">
-                                <h4>Table standard</h4> <strong>10000fcfa</strong>
-                            </label>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam autem nesciunt vero iusto
-                                corporis quidem a, beatae quasi ab quod eligendi veritatis, ex reprehenderit in eius
-                                voluptate libero? Iusto, quae dolore dolorem quasi laboriosam quis quisquam! Magnam sit
-                                delectus consectetur laboriosam velit non laborum? Vitae quidem ipsa deleniti adipisci
-                                repudiandae!</p>
-                            <input type="submit" value="réserver" name="plan">
                         </div>
-                        <div>
-                            <label for="standard">
-                                <h4>Table Moyen </h4><strong>15000fcfa</strong>
-                            </label>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam autem nesciunt vero iusto
-                                corporis quidem a, beatae quasi ab quod eligendi veritatis, ex reprehenderit in eius
-                                voluptate libero? Iusto, quae dolore dolorem quasi laboriosam quis quisquam! Magnam sit
-                                delectus consectetur laboriosam velit non laborum? Vitae quidem ipsa deleniti adipisci
-                                repudiandae!</p>
-                            <input type="submit" value="réserver" name="plan">
-                        </div>
-                        <div>
-                            <label for="standard">
-                                <h4>Table VIP</h4><strong>25000fcfa</strong>
-                            </label>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam autem nesciunt vero iusto
-                                corporis quidem a, beatae quasi ab quod eligendi veritatis, ex reprehenderit in eius
-                                voluptate libero? Iusto, quae dolore dolorem quasi laboriosam quis quisquam! Magnam sit
-                                delectus consectetur laboriosam velit non laborum? Vitae quidem ipsa deleniti adipisci
-                                repudiandae!</p>
-                            <input type="submit" value="réserver" name="plan">
+                        <div class="form-row">
+                            <input type="text" placeholder="Nom complet">
+                            <input type="text" placeholder="Telephone">
                         </div>
 
+                        <div class="form-row">
+                            <input type="number" placeholder="Nombre de personne">
+
+                        </div>
+                        <input type="submit" value="RESERVER">
                     </form>
                 </div>
             </div>
-            <div>
-                <form method="post" action="">
-                    <fieldset>
-                        <legend>informations personnelles</legend>
-
-                        <label for="nom">Nom:</label>
-                        <input type="text" name="nom" id="nom" placeholder="exemple: nodem" /> <br>
-                        <label for="prénom">prénom:</label>
-                        <input type="text" name="prénom" id="prenom" placeholder="exemple: jires" /> <br>
-                        <label for="mail">E-mail</label>
-                        <input type="mailto" id="mail"><br />
-                        <label for="pass">Votre mot de passe :</label>
-                        <input type="password" name="pass" id="pass" /><br>
-                        <label for="f">feminin</label>
-                        <input type="radio" id="f" name="genre"><br>
-                        <label for="m">masculin</label>
-                        <input type="radio" id="m" name="genre"><br>
-                        <input type="submit">
-
-                    </fieldset>
-                </form>
-            </div>
-
         </section>
 
         <footer>
-
-
+            <div class="menu-footer">
+                <div class="footer-service">
+                    <h4>SERVICE CLIENT</h4>
+                    <a href="#">Comment reserver chez Goodeat</a>
+                    <a href="contact-us.html">Contactez-nous</a>
+                    <a href="a-propos.html">A-propos</a>
+                    <a href="#">Carriere chez Goodeat</a>
+                </div>
+                <div>
+                    <h4>INSCRIVEZ-VOUS GRATUITEMENT</h4>
+                    <p>Inscrivez-vous pour recevoir les meilleures offres de Goodeat</p>
+                    <form action="#">
+                        <input type="mailto" placeholder="Adresse mail">
+                    </form>
+                </div>
+            </div>
+            <div class="copywrite">
+                copywrite 2022
+            </div>
         </footer>
     </main>
 </body>
