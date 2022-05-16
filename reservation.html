@@ -17,85 +17,124 @@
     <main>
         <header>
 
-            <h1>Goodeat</h1>
+            <h1>Good<span>eat</span> </h1>
 
             <nav>
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
-                    <li><a href="#">reservation</a></li>
+                    <li><a href="#">réservation</a></li>
                     <li><a href="./menu.html">menus</a></li>
-                    <li> <a href="./contact-us.html">contactez-nous</a> </li>
+                    <li><a href="./contact-us.html">contactez-nous</a> </li>
                     <li><a href="./a-propos.html">A propos</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section>
-            <h2>réservez votre table maintenant</h2>
-            <div class="card-reservation">
-                <div class="image-card">
-                    <!-- insertion image de formulaire -->
-                </div>
-                <div class="card-formulaire">
-                    <h3>reservation</h3>
-                    <form action="#">
-                        <div class="form-row">
-                            <select name="jours">
-                                <option value="day-select">selection du jour</option>
-                                <option value="lundi">lundi</option>
-                                <option value="mardi">mardi</option>
-                                <option value="mercredi">mercredi</option>
-                                <option value="jeudi">jeudi</option>
-                                <option value="vendredi">vendredi</option>
-                            </select>
-
-                            <select name="hours " id="">
-                                <option value="choix d'heure">Heure</option>
-                                <option value="10">10: 00</option>
-                                <option value="12">12: 00</option>
-                                <option value="14">14: 00</option>
-                                <option value="16">16: 00</option>
-                                <option value="18">18: 00</option>
-                                <option value="20">20: 00</option>
-                                <option value="22">22: 00</option>
-                            </select>
-
-                        </div>
-                        <div class="form-row">
-                            <input type="text" placeholder="Nom complet">
-                            <input type="text" placeholder="Telephone">
-                        </div>
-
-                        <div class="form-row">
-                            <input type="number" placeholder="Nombre de personne">
-
-                        </div>
-                        <input type="submit" value="RESERVER">
-                    </form>
-                </div>
+        <section id="home_reservation">
+            <div class="reservation">
+                <h1>réservation</h1>
+                <h2>reservation facile et rapide </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eligendi debitis dolorem sapiente
+                    molestias facere labore porro consequatur quia voluptates, facilis ad iure odio et eum quaerat illum
+                    quam! Nemo odit, explicabo iste harum voluptates doloribus aliquid architecto autem? Harum fugit quo
+                    non molestiae magni aperiam nostrum quibusdam accusantium a.</p>
+                <button><a href="#card-reservation">réservez maintenant</a></button>
             </div>
+            <div class="image_reservation">
+                <img src="./assets/images/Fish_reservation.png" alt="">
+            </div>
+
+        </section>
+
+        <section id="reservation">
+            <h2>réservez votre table maintenant</h2>
+
+
+            <div class="card-formulaire">
+                <h3>reservation</h3>
+                <form action="#">
+                    <div class="form-row">
+                        <select name="jours">
+                            <option value="day-select">selection du jour</option>
+                            <option value="lundi">lundi</option>
+                            <option value="mardi">mardi</option>
+                            <option value="mercredi">mercredi</option>
+                            <option value="jeudi">jeudi</option>
+                            <option value="vendredi">vendredi</option>
+                        </select>
+
+                        <select name="hours " id="">
+                            <option value="choix d'heure">Heure</option>
+                            <option value="10">10: 00</option>
+                            <option value="12">12: 00</option>
+                            <option value="14">14: 00</option>
+                            <option value="16">16: 00</option>
+                            <option value="18">18: 00</option>
+                            <option value="20">20: 00</option>
+                            <option value="22">22: 00</option>
+                        </select>
+
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Nom complet">
+                        <input type="text" placeholder="Telephone">
+                    </div>
+
+                    <div class="form-row">
+                        <input type="number" placeholder="Nombre de personne">
+                    </div>
+                    <div class="form-row">
+                        <select name="menu" id="">
+                            <option value="menu-select">Choix du menu</option>
+                            <option value="taro">taro sauce jaune</option>
+                            <option value="riz-saute">riz sauté</option>
+                            <option value="">pomme sauté</option>
+                            <option value="">riz senegalais</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+                    <input type="submit" value="RESERVER">
+                </form>
+            </div>
+
         </section>
 
         <footer>
-            <div class="menu-footer">
-                <div class="footer-service">
-                    <h4>SERVICE CLIENT</h4>
-                    <a href="#">Comment reserver chez Goodeat</a>
-                    <a href="contact-us.html">Contactez-nous</a>
-                    <a href="a-propos.html">A-propos</a>
-                    <a href="#">Carriere chez Goodeat</a>
+            <div class="services_list">
+                <div class="service">
+                    <img src="./assets/images/clock.png" alt="">
+                    <h2>Ouverture</h2>
+                    <p> De lundi à vendredi 8h30 à 23h45</p>
+                    <p>Samedi et Dimanche 23h45 à 9h30</p>
                 </div>
-                <div>
-                    <h4>INSCRIVEZ-VOUS GRATUITEMENT</h4>
-                    <p>Inscrivez-vous pour recevoir les meilleures offres de Goodeat</p>
-                    <form action="#">
-                        <input type="mailto" placeholder="Adresse mail">
-                    </form>
+
+                <div class="service">
+                    <img src="./assets/images/pin.png" alt="">
+                    <h2>Adresses</h2>
+                    <p>Cameroun-Douala</p>
+                    <p>Cameroun-Yaoundé</p>
                 </div>
+                <div class="service">
+                    <img src="./assets/images/email.png" alt="">
+                    <h2>Emails</h2>
+                    <p>email@gmail.com</p>
+                    <p>your.dish@gmail.com</p>
+                </div>
+                <div class="service">
+                    <img src="./assets/images/call.png" alt="">
+                    <h2>Numéro</h2>
+                    <p>+237 674626306</p>
+                    <p>+237 693936808</p>
+                </div>
+
+                <hr>
             </div>
-            <div class="copywrite">
-                copywrite 2022
-            </div>
+            <p class="footer_text">copywrite 2022</p>
         </footer>
     </main>
 </body>
