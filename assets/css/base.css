@@ -113,11 +113,33 @@ nav a:visited {
 }
 
 .app_name {
-    font-family: Babylonica;
+    font-family: Babylonica, 'cursive';
     font-weight: 700;
+    /* color: rgb(0, 200, 0) !important; */
+    /* color: #004400 !important; */
+    /* color: rgba(0, 0, 0, .5) !important; */
+    /* color: #000000aa !important; */
+    color: hwb(0 100% 0%) !important
+    /* font-size: 29px;
+    font-style: italic;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    text-overflow: ellipsis;
+    max-width: 100px; */
+    /* white-space: nowrap; */
+    /* overflow: hidden;
+    text-shadow: 10px 10px 20px red;
+    text-indent: 100px;
+    text-transform: capitalize; */
+    /* text-orientation:; */
+    /* line-height: 1.5;
+    letter-spacing: 10px;
+    line-break: auto; */
+    /* word-break: break-all; */
 }
 
 * {
-    font-family: Montserrat, 'sans serif';
+    font-family: Montserrat, 'serif';
     line-height: 1.5;
 }
