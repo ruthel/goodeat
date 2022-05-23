@@ -19,8 +19,8 @@ html {
     box-sizing: border-box;
     padding-top: 120px;
     padding-left: 16px;
-    background-color: white;
-    /* background-image: radial-gradient(transparent, #fff); */
+    /* background-color: white; */
+    background-image: radial-gradient(circle at 50%, rgba(255, 255, 255, .96) 10%, #fff 40%);
     min-height: 100vh;
     padding-right: 16px;
     height: 100%;
