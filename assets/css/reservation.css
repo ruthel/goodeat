@@ -20,6 +20,7 @@ html {
     padding-top: 120px;
     padding-left: 16px;
     background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     /* background-image: radial-gradient(transparent, #fff); */
     min-height: 100vh;
     padding-right: 16px;
@@ -96,28 +97,29 @@ html {
     padding-top: 45px;
     color: red !important;
 }
+#reservation{
+padding-top: 32px;
+}
 .content-reservation {
     display: flex;
     border-radius: 6px;
     overflow: hidden;
-    margin: auto;
+    margin: 24px auto;
     max-width: 800px;
     width: 100%;
-    margin-bottom: 10%;
-    margin-top: 0.6%;
     box-shadow: 0 0 10px .1px rgb(63, 62, 62);
 
 }
 
 
 #reservation h2 {
-    margin: auto;
+   
     text-transform: uppercase;
     color: white;
     text-align: center;
     font-family: Merienda, 'cursive';
     padding: 100px auto;
-    margin: 5% auto;
+    margin: auto;
 }
 
 .card-formulaire {
