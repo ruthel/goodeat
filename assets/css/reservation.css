@@ -171,6 +171,7 @@ form input[type=submit]:active {
 }
 
 /* responsive page */
+
 @media all and (max-device-width: 1024px){
     #home_reservation{
 

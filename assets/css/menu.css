@@ -10,3 +10,13 @@ html {
 #home_menu{
     margin-top: 150px;
 }
+#nosjus{
+    display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 6px ;
+    width: 270px;
+}
+#nosjus img{
+    border-radius: 6px 6px 6px 40px;
+}
