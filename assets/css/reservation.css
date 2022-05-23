@@ -19,6 +19,9 @@ html {
     box-sizing: border-box;
     padding-top: 120px;
     padding-left: 16px;
+    background-color: white;
+    /* background-image: radial-gradient(transparent, #fff); */
+    min-height: 100vh;
     padding-right: 16px;
     height: 100%;
     /* background-image: url('../images/background-home-reservation.jpg');
@@ -34,7 +37,7 @@ html {
 #home_reservation h1 {
     font-size: 3em;
     text-transform: uppercase;
-    color: white;
+    /* color: white; */
     font-family: Merienda, 'cursive';
 }
 
@@ -46,10 +49,10 @@ html {
 #home_reservation p {
     line-height: 1.5;
     font-style: italic;
-    margin: auto;
+    margin: 16px auto 0;
     box-sizing: border-box;
     text-align: justify;
-    color: white;
+    color: rgba(0, 0, 0, .6);
 }
 
 #home_reservation button {
