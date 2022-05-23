@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merienda:wght@400;700&display=swap');
-/* .container {
+.container {
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 16px;
     width: 100%;
     text-align: justify;
-} */
+}
 
 header {
     display: flex;
@@ -23,7 +23,6 @@ header {
     position: fixed;
     z-index: 1;
 }
-
 
 header h1 span {
     color: red;
@@ -79,7 +78,7 @@ nav>ul>li>* {
 }
 
 nav>ul>li>a:hover {
-    background-color: red; 
+    background-color: red;
     color: white;
     cursor: pointer;
 }
@@ -151,6 +150,7 @@ nav a:active,
 nav a:visited {
     text-decoration: none;
 }
+
 nav a:visited,
 nav a:link {
     color: black;
@@ -163,29 +163,54 @@ header h1 {
 .app_name {
     font-family: Babylonica, 'cursive';
     font-weight: 700;
+    /* color: rgb(0, 200, 0) !important; */
+    /* color: #004400 !important; */
+    /* color: rgba(0, 0, 0, .5) !important; */
+    /* color: #000000aa !important; */
+    color: hwb(0 100% 0%) !important
+    /* font-size: 29px;
+    font-style: italic;
+    color: azure;
+    text-decoration: none;
+    text-align: center;
+    text-overflow: ellipsis;
+    max-width: 100px; */
+    /* white-space: nowrap; */
+    /* overflow: hidden;
+    text-shadow: 10px 10px 20px red;
+    text-indent: 100px;
+    text-transform: capitalize; */
+    /* text-orientation:; */
+    /* line-height: 1.5;
+    letter-spacing: 10px;
+    line-break: auto; */
+    /* word-break: break-all; */
 }
 
 * {
-    font-family: Montserrat, 'sans serif';
+    font-family: Montserrat, 'serif';
     line-height: 1.5;
 }
 
 html {
-     background-image: url('../images/background1.jpg'); 
+    background-image: url('../images/background1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+
 /* pied de page  */
+
 footer {
     background-color: rgb(50, 50, 50);
     padding: 20px 16px;
     color: white;
-
 }
-footer h2,footer h4{
+
+footer h2,
+footer h4 {
     font-family: Merienda, 'cursive';
 }
 
@@ -193,7 +218,6 @@ footer h2,footer h4{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .service {
@@ -202,7 +226,6 @@ footer h2,footer h4{
 
 footer p,
 a {
-
     margin-top: 10px;
 }
 
@@ -224,8 +247,9 @@ a {
 .newletter {
     text-align: center;
     margin: 20px;
-
 }
+
+
 /* .newletter [type="mailto"]{
     width: 300px;
 } */
@@ -241,4 +265,16 @@ a {
     justify-content: center;
     padding-top: 15px;
     color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
 }
