@@ -94,8 +94,8 @@ html {
 .content-reservation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
 }
+
 
 #reservation h2 {
     margin: 40px auto;
@@ -113,14 +113,15 @@ html {
     width: 40%;
     margin-bottom: 4%;
 }
+.picture-salle-resto img {
+    border-radius: 6px;
+}
 
 .picture-salle-resto {
     width: 40%;
 }
 
-.picture-salle-resto img {
-    border-radius: 6px;
-}
+
 
 .card-formulaire h3 {
     text-align: center;
