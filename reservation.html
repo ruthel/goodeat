@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Réservation | Goodeat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -36,13 +37,17 @@
                 <div class="reservation">
                     <h1>réservation</h1>
                     <h2>reservation facile et rapide</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eligendi debitis dolorem sapiente molestias facere labore porro consequatur quia voluptates, facilis ad iure odio et eum quaerat illum quam! Nemo odit, explicabo iste harum
-                        voluptates doloribus aliquid architecto autem? Harum fugit quo non molestiae magni aperiam nostrum quibusdam accusantium a.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam eligendi debitis dolorem sapiente
+                        molestias facere labore porro consequatur quia voluptates, facilis ad iure odio et eum quaerat
+                        illum quam! Nemo odit, explicabo iste harum
+                        voluptates doloribus aliquid architecto autem? Harum fugit quo non molestiae magni aperiam
+                        nostrum quibusdam accusantium a.
+                    </p>
                     <button><a href="#reservation">réservez maintenant</a></button>
                 </div>
-                <div class="image_reservation">
+                 <div class="image_reservation">
                     <img src="./assets/images/Fish_reservation.png" alt="">
-                </div>
+                </div> 
             </div>
         </section>
 
@@ -82,14 +87,14 @@
 
                         <div class="form-row">
                             <select name="number-people" id="">
-                               <option value="number-people-select">Nombre de personne</option>
-                               <option value="1">1</option>
-                               <option value="2">2</option>
-                               <option value="3">3</option>
-                               <option value="4">4</option>
-                               <option value="5">5</option>
-                               <option value="6">6</option>
-                           </select>
+                                <option value="number-people-select">Nombre de personne</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
                         </div>
                         <div class="form-row">
                             <select name="menu" id="">
@@ -112,55 +117,89 @@
                         <input type="submit" value="RESERVER">
                     </form>
                 </div>
-                <div class="picture-salle-resto" >
-                    <h2>Salle du restaurant</h2>
+                <div class="picture-salle-resto">
+                    <h2>Notre Menu</h2>
                 </div>
             </div>
 
         </section>
 
+        <footer class="footer_section">
+            <div class="container flex flex-row items">
+                <div class="footer_contact ">
+                    <h4>
+                        Contact Us
+                    </h4>
+                    <div class="contact flex-col flex  ">
+                        <p>
+                            <a href="">
+                                <i class="fa fa-map-marker" ></i>
+                                    Location
+                            </a>
+                        </p>
+                       <p>
+                        <a href="">
+                            <i class="fa fa-phone" ></i>
+                                Call +01 1234567890
+                        </a>
+                       </p>
+                       <p>
+                        <a href=""><i class="fa fa-envelope" ></i> demo@gmail.com</a>
+                       </p>
+                    </div>
+                </div>
+                <div class="footer_detail">
+                    <h4>
+                        <a href="" >
+                            Goodeat
+                        </a>
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat enim quo reiciendis eum
+                        accusantium magnam soluta minima tempore quidem laborum, velit quod, sunt harum cum numquam
+                        labore vero ducimus 
+                    </p>
+                   
+                </div>
+                <div class="footer-openning">
+                    <h4>
+                        Opening Hours
+                    </h4>
+                    <p>
+                        Everyday
+                    </p>
+                    <p>
+                        08.00 Am -11.00 Pm
+                    </p>
+                    <div class="footer_social">
+                        <a href="">
+                            <i class="fa fa-facebook" ></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-linkedin" ></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-pinterest" ></i>
+                        </a>
+                    </div>
 
-        <footer>
-            <div class="menu-footer">
-                <div class="footer-service">
-                    <h2>SERVICE CLIENT</h2>
-                    <a href="reservation.html">Comment reserver chez Goodeat</a>
-                    <a href="contact-us.html">Contactez-nous</a>
-                    <a href="a-propos.html">A-propos</a>
-                    <a href="#">Carriere chez Goodeat</a>
                 </div>
-                <div class="service">
-                    <h2>Ouverture</h2>
-                    <p> De lundi à vendredi 8h30 à 23h45</p>
-                    <p>Samedi et Dimanche 23h45 à 9h30</p>
-                </div>
+                
+            </div>
 
-                <div class="service">
-                    <h2>Adresses</h2>
-                    <p>Cameroun-Douala</p>
-                    <p>Cameroun-Yaoundé</p>
+                <div class="footer-info">
+                    <p>
+                        &copy; <span id="displayYear"></span> All Rights Reserved By
+                        <a href="#">Getsmarter</a>
+                    </p>
                 </div>
-                <div class="service">
-                    <h2>contact</h2>
-                    <p>+237 674626306</p>
-                    <p>+237 693936808</p>
-                    <p>email@gmail.com</p>
-                    <p>your.dish@gmail.com</p>
-                </div>
-            </div>
-            <div class="newletter">
-                <h4>INSCRIVEZ-VOUS GRATUITEMENT</h4>
-                <p>Inscrivez-vous pour recevoir les meilleures offres de Goodeat</p>
-                <form action="#">
-                    <input type="mailto" placeholder="Adresse mail"><button>inscription</button>
-                </form>
-            </div>
-            <hr>
-            <div class="copywrite">
-                copywrite 2022
-            </div>
         </footer>
-
     </main>
 </body>
 

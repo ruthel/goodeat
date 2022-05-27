@@ -21,18 +21,27 @@ html {
     padding-left: 16px;
     /* background-color: white; */
     box-shadow: 0px 16px 10px .2px rgba(0, 0, 0, 0.2);
-    background-image: radial-gradient(circle at 50%, rgba(255, 255, 255, 0.92) 10%, #fff 30%);
+    background-image: radial-gradient(circle at 30%, rgba(255, 255, 255, 0.92) 10%, #fff 30%);
+    background-size: cover;
+
     min-height: 100vh;
-    padding-right: 16px;
-    height: 100%;
+    padding: 0 16px;
+    /* height: 100%; */
     /* background-image: url('../images/background-home-reservation.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; */
+    position: relative;
+    z-index: -2;
+ 
 }
 
 .reservation {
-    margin-top: 15;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+.reservation p{
+    box-sizing: border-box;
 }
 
 #home_reservation h1 {
@@ -64,17 +73,21 @@ html {
     background: black;
     position: relative;
     border-radius: 4px;
+    cursor: pointer;
+    
+    
 }
 
 #home_reservation button a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    
+
 }
 
 #home_reservation button::before {
     position: absolute;
-    z-index: -1;
     content: "";
     top: 6px;
     left: 6px;
@@ -82,28 +95,51 @@ html {
     height: 100%;
     background-color: red;
     border-radius: 4px;
-}
+    z-index: -1;
 
-#home_reservation button a:hover {
-    letter-spacing: 1px;
-    transition: 0.5s;
 }
 
 
 /* card reservation */
 
-.picture-salle-resto h2 {
-    padding-top: 45px;
-    color: red !important;
+#reservation {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
 }
 
-#reservation {
-    padding-top: 32px;
+#reservation::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+
+
+}
+#reservation::before{
+    content: '';
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+
+}
+#reservation:hover::after{
+    transition: .2s;
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .content-reservation {
     display: flex;
     border-radius: 6px;
+    box-sizing: border-box;
     overflow: hidden;
     margin: 24px auto;
     max-width: 1000px;
@@ -132,12 +168,31 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 0;
+}
+.picture-salle-resto h2 {
+    padding-top: 55px;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+    
+}
+.picture-salle-resto::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .2);
+    z-index: 1;
 }
 
-.picture-salle-resto h3 {
+/* .picture-salle-resto h3{
     text-align: center;
-    color: white
-}
+    color: white ;
+} */
 
 .card-formulaire h3 {
     text-align: center;
@@ -145,6 +200,7 @@ html {
     margin: 30px auto;
     font-size: 25px;
     font-family: Merienda, 'cursive';
+    text-transform: uppercase;
 }
 
 .form-row {
@@ -158,11 +214,16 @@ form input {
     display: block;
     width: 100%;
     margin: 25px auto;
-    padding: 5px;
+    padding: 16px;
     border-radius: 2px;
     border: 2px;
     font-weight: 700;
-    background: #eee;
+    background: #eee; 
+    font-weight: 600;
+}
+input::placeholder{
+    color: rgba(216, 212, 212, 0.92);
+    font-weight: 600;
 }
 
 form input[type=submit] {
@@ -176,6 +237,7 @@ form input[type=submit] {
     margin: 15px auto;
     border: 4px black;
     background: red;
+   
 }
 
 form input[type=submit]:active {
@@ -188,19 +250,28 @@ form input[type=submit]:active {
 
 /* responsive page */
 
-@media all and (max-device-width: 1024px) {
-    #home_reservation {
+@media all and (max-width: 768px) {
+     #home_reservation {
         display: flex;
         flex-direction: column;
-    }
-    .card-formulaire {
-        width: 70%;
-    }
+      
+    } 
+
     .picture-salle-resto {
-        width: 70%;
+       display: none;
     }
-    .content-reservation {
-        display: flex;
-        flex-direction: column-reverse;
+    .picture-salle-resto h2{
+        display: none;
     }
+    .card-formulaire{
+        width: 100%;
+    }
+    .content-reservation{
+        max-width: 500px;
+    }
+    .image_reservation{
+        display: none;
+    }
+   
 }
+

@@ -11,7 +11,7 @@
 
 header {
     display: flex;
-    margin: auto;
+    margin: 0;
     padding: 15px 50px;
     left: 0;
     top: 0;
@@ -165,7 +165,7 @@ header h1 {
     /* color: #004400 !important; */
     /* color: rgba(0, 0, 0, .5) !important; */
     /* color: #000000aa !important; */
-    color: hwb(0 100% 0%) !important
+    color: hwb(0 100% 0%) !important;
     /* font-size: 29px;
     font-style: italic;
     color: azure;
@@ -190,80 +190,14 @@ header h1 {
     line-height: 1.5;
 }
 
-html {
+body{
     background-image: url('../images/background1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
-
-
-/* pied de page  */
-
-footer {
-    background-color: rgb(50, 50, 50);
-    padding: 20px 16px;
-    color: white;
-}
-
-footer h2,
-footer h4 {
-    font-family: Merienda, 'cursive';
-}
-
-.menu-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.service {
-    margin-top: 20px;
-}
-
-footer p a {
-    margin-top: 10px;
-}
-
-.footer-service {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.menu-footer a:link {
-    color: #fff;
-    text-decoration: none;
-}
-
-.menu-footer a:visited {
-    color: #fff;
-}
-
-.newletter {
-    text-align: center;
-    margin: 20px;
-}
-
-
-/* .newletter [type="mailto"]{
-    width: 300px;
-} */
-
-.newletter button {
-    color: #fff;
-    background-color: red;
-}
-
-.copywrite {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 15px;
-    color: #fff;
-}
-
 .flex {
     display: flex;
 }
@@ -274,4 +208,80 @@ footer p a {
 
 .flex-row {
     flex-direction: row;
+}
+
+
+/* pied de page  */
+
+.footer_section{
+    background-color: #201e2e;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  
+  
+}
+
+footer a,
+footer a:link,
+footer a:active,
+footer a:visited {
+    text-decoration: none;
+}
+footer a {
+    color: white;
+
+}
+
+.items a:hover{
+    color: orange;
+    transition: 0.3s; 
+}
+
+
+footer h4, 
+.footer_detail a{
+    font-family: Merienda, 'cursive';
+    padding-bottom: 20px;
+}
+
+.footer_contact,
+.footer_detail,
+.footer-openning{
+    margin: 0 30px;
+    text-align: center;
+    width: 300px;
+}
+.footer-info{
+    text-align: center;
+    margin-top: 30px;
+}
+.items{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer_detail{
+    flex: 1;
+}
+.footer_social{
+    margin-top: 30px;
+}
+.contact p,
+.footer-openning p{
+    margin: 4px auto;
+}
+
+/* responsive */
+@media all and (max-width: 768px) {
+    .items{
+        flex-wrap: nowrap; 
+        flex-direction: column ;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    
 }
