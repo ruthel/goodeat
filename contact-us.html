@@ -7,70 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Goodeat</title>
     <link rel="stylesheet" href="./assets/css/contact.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/base.css">
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-               <li><a href="./index.html">Accueil</a></li>
-               <li><a href="./reservation.html">Reservation</a></li>
-               <li><a href="./menu.html">Menus</a></li>
-               <li><a href="#">Contactez-nous</a></li>
-               <li>A Propos</li>  
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+                <li><a href="./menu.html">Menus</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+                <li>A Propos</li>
             </ul>
-        </nav>  
+        </nav>
         <center>
             <h1> Contactez-Nous</h1>
-           </center> 
-       </header>
-               <section>
-                   <div>
-                    <img src="../assets/images/contact.jpg" alt="" width="75%" height="">
-                   </div>
-               </section> 
-            <div class="card-formulaire">
-        <h2> Message </h2>
-        <form action="#" method="post" class="contact form">
-            <div class="form-row">
-            <input type="text" name="Nom" placeholder="Nom"> <br>
-        </div>
-        <div class="forme-rows">
-            <input type="text" name="Prenom" placeholder="Prenom"> <br>
-        </div>
-        <div class="form-rows">
-            <input type="email" name="email" id="email" placeholder="Adresse mail"> <br>
-        </div>
-<div class="form-rows">
-    <select name="contry">
-        <option value="cmr">Cameroon</option>
-        <option value="civ">Cote d'ivoire</option>
-        <option value="tg">Togo</option>
-    </select> <br>
-</div>
+        </center>
+    </header>
+    <section id="container">
+        <section>
+            <div>
+                <img src="../assets/images/contact.jpg" alt="" width="75%" height="">
+            </div>
+        </section>
+        <div class="card-formulaire">
+            <h2> Message </h2>
+            <form action="#" method="post" class="contact form">
+                <div class="form-row">
+                    <input type="text" name="Nom" placeholder="Nom"> <br>
+                </div>
+                <div class="forme-rows">
+                    <input type="text" name="Prenom" placeholder="Prenom"> <br>
+                </div>
+                <div class="form-rows">
+                    <input type="email" name="email" id="email" placeholder="Adresse mail"> <br>
+                </div>
+                <div class="form-rows">
+                    <select name="contry">
+                        <option value="cmr">Cameroon</option>
+                        <option value="civ">Cote d'ivoire</option>
+                        <option value="tg">Togo</option>
+                    </select> <br>
+                </div>
 
-<div class="form-rows">
-    <select name="code" id="">
-        <option value="">code</option>
-        <option value="+237">+237</option>
-        <option value="+225">+225</option>
-        <option value="+231">+231</option>
-        <option value="+241">+241</option>
-    </select>
-</div>
+                <div class="form-rows">
+                    <select name="code" id="">
+                        <option value="">code</option>
+                        <option value="+237">+237</option>
+                        <option value="+225">+225</option>
+                        <option value="+231">+231</option>
+                        <option value="+241">+241</option>
+                    </select>
+                </div>
 
-<div class="form-rows">
-        <input type="tel" name="phoneNumber" placeholder="Numero de telephone"> <br>
-       </div> 
-<div class="form-rows">
-        <textarea name="description" cols="30" rows="10">
+                <div class="form-rows">
+                    <input type="tel" name="phoneNumber" placeholder="Numero de telephone"> <br>
+                </div>
+                <div class="form-rows">
+                    <textarea name="description" cols="30" rows="10">
         </textarea><br>
-</div> 
-        <input type="submit">
-            
-</form>
-</div>
-    
+                </div>
+                <input type="submit">
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="menu-footer">
+            <div class="footer-service">
+                <h2>SERVICE CLIENT</h2>
+                <a href="reservation.html">Comment reserver chez Goodeat</a>
+                <a href="contact-us.html">Contactez-nous</a>
+                <a href="a-propos.html">A-propos</a>
+                <a href="#">Carriere chez Goodeat</a>
+            </div>
+            <div class="service">
+                <h2>Ouverture</h2>
+                <p> De lundi à vendredi 8h30 à 23h45</p>
+                <p>Samedi et Dimanche 23h45 à 9h30</p>
+            </div>
+
+            <div class="service">
+                <h2>Adresses</h2>
+                <p>Cameroun-Douala</p>
+                <p>Cameroun-Yaoundé</p>
+            </div>
+            <div class="service">
+                <h2>contact</h2>
+                <p>+237 674626306</p>
+                <p>+237 693936808</p>
+                <p>email@gmail.com</p>
+                <p>your.dish@gmail.com</p>
+            </div>
+        </div>
+        <div class="newletter">
+            <h4>INSCRIVEZ-VOUS GRATUITEMENT</h4>
+            <p>Inscrivez-vous pour recevoir les meilleures offres de Goodeat</p>
+            <form action="#">
+                <input type="mailto" placeholder="Adresse mail"><button>inscription</button>
+            </form>
+        </div>
+        <hr>
+        <div class="copywrite">
+            copywrite 2022
+        </div>
+    </footer>
+
 </body>
 
 </html>

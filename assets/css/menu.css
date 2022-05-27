@@ -5,7 +5,7 @@
  }
  
  header {
-     background-color: grey;
+     background-color: white;
      min-height: 15px;
      padding-top: 20px;
      display: grid;
@@ -63,4 +63,7 @@
  
  #jus {
      background-color: white;
+ }
+ #jus::after{
+     backdrop-filter: 100px;
  }
