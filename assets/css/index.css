@@ -33,8 +33,7 @@ html {
     box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.6);
     position: fixed;
     z-index: 3;
-   box-sizing: border-box;
-
+    box-sizing: border-box;
 }
 
 header:hover::before {
@@ -103,7 +102,6 @@ nav {
 
 nav ul {
     list-style: none;
-    display: block;
     text-align: right;
     padding: 0 24px;
 }
@@ -194,13 +192,13 @@ nav>ul>li:hover::after {
 nav a,
 nav a:link,
 nav a:active,
-nav a:visited{
+nav a:visited {
     text-decoration: none;
 }
 
 nav a:visited,
 nav a:link {
-    color:black;
+    color: black;
 }
 
 header h1 {
@@ -211,15 +209,16 @@ header h1 {
     max-width: 1000px;
     margin-left: 20%;
     color: white;
-
 }
 
 .greetings_goodeat h1 {
     color: white;
 }
-.greetings_goodeat p{
+
+.greetings_goodeat p {
     margin-bottom: 16px;
 }
+
 .greetings_goodeat button {
     background-color: red;
     border: 1px solid red;
@@ -231,68 +230,123 @@ header h1 {
     color: white;
     cursor: pointer;
 }
+
 .greetings_goodeat button:active {
     color: #fff;
     transition: 0.3s;
     transform: scale(0.9);
 }
+
+
 /* section accueil */
-#acceuil{
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-}
 
-/* our menu */
-
-.content_menu{
+#acceuil {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:white;
+}
+
+
+/* our menu */
+
+.content_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
     padding: 30px 16px;
     width: 100%;
 }
-.content_menu h1{
+
+.content_menu h1 {
     text-transform: capitalize;
     font-family: Merienda, 'cursive';
 }
-.our_menu{
+
+.our_menu {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
 }
-.menu_items{
-    width: 300px;
-    background-color:  #201e2e;
+
+.menu_items {
     color: white;
-    border-radius: 14px 14px 10px 10px;
-    border: 1px solid white;
-    box-shadow: 0px 0px 16px  rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    /* border: 1px solid transparent; */
+    /* box-shadow: 0px 0px 4px .1px rgba(0, 0, 0, 0.2); */
+    transition: .3s;
     margin: 20px auto;
-   
+    position: relative;
 }
-.img_menu{
-    background-color: rgb(221, 217, 217);
-    border-radius:10px 10px 0 50px ; 
+
+.menu_items:hover .full-description {
+    z-index: 2;
+    transform: translateY(0);
+    transition: .2s;
+}
+
+.full-description {
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    left: 0;
+    height: 100%;
+    border-radius: 12px;
+    z-index: 0;
+    transition: .2s;
     width: 100%;
-    padding: 0;
-   text-align: center;
-   
-}
-.descri_menu{
     padding: 16px;
+    background-color: #201E2E;
+}
+
+.img_menu {
+    background-color: rgb(241, 242, 243);
+    border-radius: 10px 10px 0 50px;
+    width: 100%;
+    padding: 14px 0;
+    position: relative;
+    transition: .2s;
+    z-index: 2;
+    text-align: center;
+}
+
+.img_menu:hover>img {
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.img_menu img {
+    transform: scale(.9);
+    transition: .3s;
+}
+
+.descri_menu {
+    padding: 16px;
+    background: #201e2e;
     box-sizing: border-box;
+    margin-top: -54px;
+    transition: .2s;
+    padding: 68px 28px 32px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0 0 12px 12px;
 }
-.descri_menu p{
+
+.descri_menu p {
     margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
 }
-.descri_menu h1{
+
+.descri_menu h1 {
+    margin: 6px 0;
     text-transform: uppercase;
 }
+
 .content_menu button,
-.story button{
+.story button {
     background-color: red;
     color: white;
     padding: 10px;
@@ -302,33 +356,41 @@ header h1 {
     margin-top: 32px;
 }
 
+
 /* le chef cuisiniers */
-.our_chef{
+
+.our_chef {
     padding: 32px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.word_chef{
+
+.word_chef {
     text-align: center;
     color: white;
     width: 70%;
 }
-.word_chef h1{
+
+.word_chef h1 {
     text-transform: capitalize;
     font-family: Merienda, 'cursive';
 }
 
+
 /* story goodeat */
-.story_goodeat{
+
+.story_goodeat {
     display: flex;
+    width: 100%;
     justify-content: space-around;
     padding: 32px 16px;
     background-color: white;
 }
-.image_restaurant{
+
+.image_restaurant {
     border: 3px solid red;
-     border-radius: 20px; 
+    border-radius: 20px;
     width: 50%;
     height: 500px;
     overflow: hidden;
@@ -337,30 +399,36 @@ header h1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: 0px 0px 16px  rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
 }
-.story{
+
+.story {
     width: 40%;
     text-align: left;
 }
-.story h1{
+
+.story h1 {
     text-transform: capitalize;
     font-family: Merienda, 'cursive';
     margin-bottom: 16px;
 }
 
+
 /* avis client */
-.avis{
+
+.avis {
     text-align: center;
     color: white;
     width: 40%;
     padding: 36px 0;
 }
-.avis h1{
+
+.avis h1 {
     text-transform: capitalize;
     font-family: Merienda, 'cursive';
 }
-#acceuil::before{
+
+#acceuil::before {
     content: '';
     z-index: -1;
     position: absolute;
@@ -371,15 +439,16 @@ header h1 {
     height: 100%;
     background-color: rgba(0, 0, 0, .6);
 }
+
 @media all and (max-width: 768px) {
-    .story_goodeat{
+    .story_goodeat {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .image_restaurant,
-    .story{
+    .story {
         width: 80%;
         margin: 16px 0;
     }

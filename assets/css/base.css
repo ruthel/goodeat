@@ -9,6 +9,23 @@
     text-align: justify;
 }
 
+#pp-image {
+    display: inline-block;
+    overflow: hidden;
+    /* background: #201E2E; */
+    margin-left: 8px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+}
+
+#pp-image img {
+    height: 42x;
+    border-radius: 50%;
+    width: 42px;
+}
+
 header {
     display: flex;
     margin: 0;
@@ -50,11 +67,13 @@ header>h1>a:visited {
 nav {
     max-width: 1024px;
     margin: 0;
+    user-select: none;
 }
 
 nav>ul {
     list-style: none;
-    display: block;
+    display: flex;
+    align-items: center;
     text-align: right;
     padding: 0 24px;
 }
@@ -190,7 +209,7 @@ header h1 {
     line-height: 1.5;
 }
 
-body{
+body {
     background-image: url('../images/background1.jpg');
     background-position: center;
     background-size: cover;
@@ -198,6 +217,7 @@ body{
     background-attachment: fixed;
     box-sizing: border-box;
 }
+
 .flex {
     display: flex;
 }
@@ -213,16 +233,14 @@ body{
 
 /* pied de page  */
 
-.footer_section{
+.footer_section {
     background-color: #201e2e;
     color: white;
     box-sizing: border-box;
     padding-top: 40px;
     padding-bottom: 10px;
-  padding-left: 80px;
-  padding-right: 80px;
-  
-  
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 footer a,
@@ -231,57 +249,62 @@ footer a:active,
 footer a:visited {
     text-decoration: none;
 }
+
 footer a {
     color: white;
-
 }
 
-.items a:hover{
+.items a:hover {
     color: orange;
-    transition: 0.3s; 
+    transition: 0.3s;
 }
 
-
-footer h4, 
-.footer_detail a{
+footer h4,
+.footer_detail a {
     font-family: Merienda, 'cursive';
     padding-bottom: 20px;
 }
 
 .footer_contact,
 .footer_detail,
-.footer-openning{
+.footer-openning {
     margin: 10px 30px;
     text-align: center;
     width: 300px;
 }
-.footer-info{
+
+.footer-info {
     text-align: center;
     margin-top: 30px;
 }
-.items{
+
+.items {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.footer_detail{
+
+.footer_detail {
     flex: 1;
 }
-.footer_social{
+
+.footer_social {
     margin-top: 30px;
 }
+
 .contact p,
-.footer-openning p{
+.footer-openning p {
     margin: 4px auto;
 }
 
+
 /* responsive */
+
 @media all and (max-width: 768px) {
-    .items{
-        flex-wrap: nowrap; 
-        flex-direction: column ;
+    .items {
+        flex-wrap: nowrap;
+        flex-direction: column;
         align-items: center;
         display: flex;
         justify-content: center;
     }
-    
 }
