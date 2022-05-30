@@ -189,10 +189,6 @@ html {
     z-index: 1;
 }
 
-/* .picture-salle-resto h3{
-    text-align: center;
-    color: white ;
-} */
 
 .card-formulaire h3 {
     text-align: center;
@@ -215,10 +211,10 @@ form input {
     width: 100%;
     margin: 25px auto;
     padding: 16px;
-    border-radius: 2px;
+    border-radius: 6px;
     border: 2px;
     font-weight: 700;
-    background: #eee; 
+    background: 	#f5f5f1; 
     font-weight: 600;
 }
 input::placeholder{
