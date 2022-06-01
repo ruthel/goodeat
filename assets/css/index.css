@@ -268,6 +268,7 @@ header h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
+    
 }
 
 .menu_items {
@@ -279,6 +280,7 @@ header h1 {
     transition: .3s;
     margin: 20px auto;
     position: relative;
+    width: 300px;
 }
 
 .menu_items:hover .full-description {
@@ -381,11 +383,16 @@ header h1 {
 /* story goodeat */
 
 .story_goodeat {
-    display: flex;
+    
+    background-color: white;
     width: 100%;
+}
+.story_content{
+    display: flex;
+   
     justify-content: space-around;
     padding: 32px 16px;
-    background-color: white;
+
 }
 
 .image_restaurant {
@@ -441,7 +448,7 @@ header h1 {
 }
 
 @media all and (max-width: 768px) {
-    .story_goodeat {
+    .story_content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -452,4 +459,12 @@ header h1 {
         width: 80%;
         margin: 16px 0;
     }
+     .our_menu {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media all and (max-width: 475px) {
+    .our_menu {
+        grid-template-columns: repeat(1, 1fr);
+    } 
 }

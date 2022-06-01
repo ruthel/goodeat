@@ -1,26 +1,14 @@
- html,
- body {
-     margin: 0;
-     padding: 0;
- }
- 
- header {
-     background: color black 10px;
-     opacity: 100%;
-     min-height: 15px;
-     padding-top: 0px;
-     /* display: grid; */
-     /* right:0; */
- }
- 
- nav>ul {
-     list-style: none;
- }
- 
- html {
-     position: relative;
-     scroll-behavior: smooth;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
  
  .menu-item {
      display: inline-block;
