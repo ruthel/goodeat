@@ -1,0 +1,114 @@
+#square {
+    height: 200px;
+    width: 200px;
+    background: red;
+    position: absolute;
+    animation-name: changerColor;
+    animation-duration: 5s;
+    border-radius: 50%;
+    /* animation-delay: 5s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.17, .67, .7, -0.16);
+}
+
+#piste {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    background: whitesmoke;
+}
+
+#player-p1 {
+    height: 60px;
+    width: 100px;
+    background-color: orange;
+    border-radius: 100px 100px 0 0;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+    animation-name: p1;
+    animation-direction: alternate;
+}
+
+#player {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: body;
+}
+
+#player-p2 {
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 42px;
+    transform: rotate(45deg);
+    background-color: orange;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+    animation-name: p2;
+    animation-direction: alternate;
+    border-radius: 0 0 100px 100px;
+}
+
+@keyframes p1 {
+    from {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes p2 {
+    from {
+        transform: rotate(45deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes body {
+    from {
+        transform: translate(0)
+    }
+    to {
+        transform: translateX(1000px)
+    }
+}
+
+@keyframes changerColor {
+    /* from {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    to {
+        top: 50%;
+        left: 50%;
+        background-color: green;
+    } */
+    0% {
+        left: 0;
+        top: calc(50% - 100px);
+    }
+    25% {
+        top: 0;
+        left: calc(50% - 100px);
+    }
+    50% {
+        left: calc(100% - 200px);
+        top: calc(50% - 100px);
+    }
+    75% {
+        top: calc(100% - 200px);
+        left: calc(50% - 100px);
+    }
+    100% {
+        left: 0;
+        top: calc(50% - 100px);
+    }
+}
