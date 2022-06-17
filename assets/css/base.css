@@ -26,10 +26,10 @@
     width: 42px;
 }
 
-header {
+header, .navbar{
     display: flex;
-    margin: 0;
-    padding: 15px 50px;
+    margin: auto;
+    padding: 15px 5%;
     left: 0;
     top: 0;
     right: 0;
@@ -47,44 +47,37 @@ header h1 span {
 }
 
 nav ul li {
-    display: inline;
+
     list-style: none;
     font-size: 1.2em;
     text-transform: capitalize;
 }
 
-header>h1>a,
-header>h1>a:link,
-header>h1>a:active,
-header>h1>a:visited {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-family: 'Lobster', cursive !important;
-    font-weight: 700;
-}
+
 
 nav {
-    max-width: 1024px;
+    /* max-width: 800px; */
     margin: 0;
     user-select: none;
+    display: inline;
+    
 }
 
-nav>ul {
+nav ul {
     list-style: none;
-    display: flex;
+    
     align-items: center;
-    text-align: right;
+    text-align: right; 
     padding: 0 24px;
 }
 
-nav>ul>li {
-    display: inline-block;
+nav ul li {
+    display: inline; 
     position: relative;
+    
 }
 
 nav>ul>li>a {
-    display: inline-block;
     padding: 4px 16px;
     text-decoration: none;
     position: relative;
@@ -95,12 +88,12 @@ nav>ul>li>* {
     position: relative;
 }
 
-nav>ul>li:hover a {
+nav>ul>li:hover a,.navbar nav>ul>li:hover a{
     color: white;
     cursor: pointer;
 }
 
-nav>ul>li::before {
+nav>ul>li::before, .navbar nav ul li::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -114,7 +107,7 @@ nav>ul>li::before {
     z-index: 0;
 }
 
-nav>ul>li:hover::before {
+nav>ul>li:hover::before, .navbar nav ul li:hover::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -166,12 +159,19 @@ nav a:link,
 nav a:active,
 nav a:visited {
     text-decoration: none;
-}
-
-nav a:visited,
-nav a:link {
     color: black;
 }
+header h1 a,
+header h1 a:link,
+header h1 a:active,
+header h1 a:visited {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-family: 'Lobster', cursive !important;
+    font-weight: 700;
+}
+
 
 header h1 {
     color: black;
@@ -310,5 +310,72 @@ hr{
         display: flex;
         justify-content: center;
     }
-}
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.9);
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 89px;
+        padding: 32px;
+        position: absolute;
+        animation-name: animate;
+        animation-duration: .3s;
+        animation-timing-function: ease-out;
+        
+    }
+    .menu li, menu ul a{
+        margin: 10px;
+    }
 
+    /* animation du menu */
+    @keyframes animate {
+        from{
+            transform: translateX(200px);
+        }
+    }
+
+    /* mznu reponsive */
+    .icon{
+        z-index: 10;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .icon::before{
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 2px;
+        background-color: #999;
+        box-shadow: 0 10px 0 #999;
+        border-radius: 8px;
+        transition: .3s;
+    }
+    .icon::after{
+        position: absolute;
+        content: "";
+        width: 32px;
+        height: 2px;
+        background-color: #999;
+        border-radius: 8px;
+        transform: translateY(-10px);
+        transition: .3s;
+    }
+    .icon.active::before{
+        transform: rotate(-45deg);
+        box-shadow: 0 0px 0 #999;
+    }
+    .icon.active::after{
+        transform: rotate(45deg);
+    }
+    .responsive{
+        display: flex;
+    }
+}

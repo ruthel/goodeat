@@ -11,20 +11,27 @@
     position: relative;
     scroll-behavior: smooth;
  }
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+ }
 
 .auth-container {
     background-color: white;
-    max-width: 500px;
-    width: 100%;
+    width: 500px;
     max-height: 700px;
     margin: auto;
     transition: .3s;
+    box-sizing: border-box;
 }
 
 form>div {
     display: flex;
     margin: 12px 0 8px;
     flex-direction: column;
+    min-width: 290px;
 }
 
 form>div input,
@@ -56,9 +63,11 @@ form div:nth-child(3) {
     align-items: center;
 }
 
-body>div {
-    background-color: red;
-    width: calc(100% - 4px) !important;
+.connxion{
+   
+    margin: 12px 0 8px;
+    flex-direction: column;
+    min-width: 30px;
     border-left: 2px solid green;
 }
 
@@ -66,11 +75,12 @@ body>div {
     text-align: center;
 }
 
+
 @media screen and (max-width:425px) {
     .auth-container {
         height: 100%;
         padding: 16px;
-        max-height: 100vh !important;
+        max-height: 100vh;
     }
     .auth-container h1 {
         margin: 12px 0;

@@ -16,19 +16,20 @@
         <h1 class="app_name" style="font-size: 36px;"> <a href="#">Good<span>eat</span> </a> </h1>
 
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="#">réservation</a></li>
+                <li><a href="./reservation.html">réservation</a></li>
                 <li><a href="./menu.html">menus</a></li>
-                <li><a href="./contact-us.html">contactez-nous</a> </li>
+                <li><a href="#">contactez-nous</a> </li>
                 <li><a href="./a-propos.html">A propos</a></li>
                 <a href="" id="pp-image">
                     <img src="./assets/images/profile-icon.png" width="120" alt="profile">
                 </a>
             </ul>
         </nav>
+        <div class="icon"></div>
     </header>
-    <section id="container">
+    <section class="container card">
      
         <div class="card-formulaire">
             <h2> Message </h2>
@@ -36,35 +37,19 @@
                 <div class="form-rows">
                     <input type="text" name="Nom" placeholder="Nom"> <br>
                 </div>
-                <div class="forme-rows">
+                <div class="form-rows">
                     <input type="text" name="Prenom" placeholder="Prenom"> <br>
                 </div>
                 <div class="form-rows">
                     <input type="email" name="email" id="email" placeholder="Adresse mail"> <br>
                 </div>
-                <div class="form-rows">
-                    <select name="contry">
-                        <option value="cmr">Cameroon</option>
-                        <option value="civ">Cote d'ivoire</option>
-                        <option value="tg">Togo</option>
-                    </select> <br>
-                </div>
-
-                <div class="form-rows">
-                    <select name="code" id="">
-                        <option value="">code</option>
-                        <option value="+237">+237</option>
-                        <option value="+225">+225</option>
-                        <option value="+231">+231</option>
-                        <option value="+241">+241</option>
-                    </select>
-                </div>
 
                 <div class="form-rows">
                     <input type="tel" name="phoneNumber" placeholder="Numero de telephone"> <br>
                 </div>
-                <div class="form-rows">
-                    <textarea name="description" cols="30" rows="10">
+                <div class="form-rows message">
+                    <label for="message" id="msg">Entrez votre message </label>
+                    <textarea name="description" id="message" cols="30" rows="10">
         </textarea><br>
                 </div>
                 <input type="submit">
@@ -150,7 +135,7 @@
                 </p>
             </div>
     </footer>
-
+    <script src="./assets/js/base.js"></script>
 </body>
 
 </html>

@@ -9,10 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-#name {
-    /* color: white; */
-}
-
 .content_navbar {
     min-height: 100vh;
     padding-top: 24px;
@@ -20,7 +16,7 @@ html {
     position: relative;
 }
 
-.navbar {
+/* .navbar {
     display: flex;
     margin: 0;
     padding: 15px 50px;
@@ -34,7 +30,7 @@ html {
     position: fixed;
     z-index: 3;
     box-sizing: border-box;
-}
+} */
 
 header:hover::before {
     filter: blur(4px);
@@ -72,142 +68,11 @@ header>* {
     z-index: 2;
 }
 
-header h1 span {
-    color: red;
-    font-family: 'Lobster', cursive;
-}
-
-nav ul li {
-    display: inline;
-    list-style: none;
-    font-size: 1.2em;
-    text-transform: capitalize;
-}
-
-header h1 a,
-header h1 a:link,
-header h1 a:active,
-header h1 a:visited {
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    font-family: 'Lobster', cursive !important;
-    font-weight: 700;
-}
-
-nav {
-    max-width: 1024px;
-    margin: 0;
-}
-
-nav ul {
-    list-style: none;
-    text-align: right;
-    padding: 0 24px;
-}
-
-nav ul li {
-    display: inline-block;
-    position: relative;
-}
-
-nav ul li a {
-    display: inline-block;
-    padding: 4px 16px;
-    text-decoration: none;
-    position: relative;
-}
-
-nav>ul>li>* {
-    z-index: 2;
-    position: relative;
-}
-
-.navbar nav>ul>li:hover a {
-    color: white;
-    cursor: pointer;
-}
-
-.navbar nav ul li::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    transition: .3s;
-    transform: scale(0);
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 0;
-    z-index: 0;
-}
-
-.navbar nav ul li:hover::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    transition: .3s;
-    transform: scale(1);
-    background: red;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    left: 0;
-    z-index: 0;
-}
-
-nav>ul>li::after {
-    content: '';
-    z-index: 1;
-    position: absolute;
-    width: 85%;
-    height: 115%;
-    transform: rotate(0deg) scale(0);
-    transition-duration: .3s;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-nav>ul>li:hover::after {
-    content: '';
-    z-index: 0;
-    position: absolute;
-    width: 85%;
-    height: 115%;
-    transform: rotate(4deg) scale(1);
-    transition-delay: .1s;
-    transition-duration: .3s;
-    background: orange;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-nav a,
-nav a:link,
-nav a:active,
-nav a:visited {
-    text-decoration: none;
-}
-
-nav a:visited,
-nav a:link {
-    color: black;
-}
-
-header h1 {
-    color: black;
-}
 
 .greetings_goodeat {
     max-width: 1000px;
     margin-left: 20%;
+    margin-right: 32px;
     color: white;
 }
 
@@ -460,11 +325,6 @@ header h1 {
         margin: 16px 0;
     }
      .our_menu {
-        grid-template-columns: repeat(2, 1fr);
-    } 
-}
-@media all and (max-width: 475px) {
-    .our_menu {
         grid-template-columns: repeat(1, 1fr);
     } 
 }
